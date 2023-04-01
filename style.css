@@ -1,0 +1,28 @@
+body {
+    background-color: #f9fafb;
+  }
+  
+  .timer-container {
+    background-color: #f3f4f6;
+  }
+  
+  .timer-display {
+    height: 200px;
+  }
+  
+  .timer-label {
+    letter-spacing: 1px;
+  }
+  
+  .buttons-container button {
+    min-width: 120px;
+  }
+  
+  #setting-form input {
+    width: 80%;
+  }
+  
+  #confirm-btn {
+    margin-top: 1rem;
+  }
+  

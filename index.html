@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tomato Timer</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container mx-auto flex flex-col items-center justify-center h-screen">
+		<div class="timer-container rounded-lg p-4">
+			<div class="timer-display flex items-center justify-center flex-col">
+				<div id="timer" class="text-6xl font-bold text-center">25:00</div>
+				<div id="timer-label" class="timer-label uppercase text-sm font-semibold text-gray-500">Work</div>
+			</div>
+			<div class="buttons-container flex items-center justify-center mt-6">
+				<button id="start-btn" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none">Start</button>
+				<button id="setting-btn" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 ml-4 rounded focus:outline-none">Setting</button>
+				<button id="reset-btn" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 ml-4 rounded focus:outline-none">Reset</button>
+			</div>
+			<div id="setting-form" class="hidden mt-4">
+				<form>
+					<div class="flex items-center">
+						<label for="work-time-input" class="w-1/2">Working Time (min)</label>
+						<input type="number" id="work-time-input" class="w-1/2 border rounded py-1 px-2 ml-4" value="25">
+					</div>
+					<div class="flex items-center mt-4">
+						<label for="relax-time-input" class="w-1/2">Relaxing Time (min)</label>
+						<input type="number" id="relax-time-input" class="w-1/2 border rounded py-1 px-2 ml-4" value="5">
+					</div>
+					<button id="confirm-btn" type="submit" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 mt-4 rounded focus:outline-none">Confirm</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
